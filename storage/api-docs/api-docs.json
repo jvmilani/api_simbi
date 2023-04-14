@@ -1,0 +1,53 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Simbi",
+        "version": "1"
+    },
+    "paths": {
+        "/api/rouanet?page=": {
+            "get": {
+                "operationId": "95cd377f34a809746f67ac4db6fdf7fd",
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "path",
+                        "description": "The ID of the resource",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Busca as informações, limitado a 15 retornos na página escolhida"
+                    }
+                }
+            }
+        },
+        "/api/rouanet/{id}": {
+            "get": {
+                "operationId": "a1f17c9a1f60bc9d6d90eca18e1da00b",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID of the resource",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 56173
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Busca as informações, limitado a 15 retornos na página escolhida"
+                    }
+                }
+            }
+        }
+    }
+}
